@@ -81,7 +81,7 @@ async def monthly_reminder(app):
             logging.warning(f"Ошибка при отправке пользователю {user_id}: {e}")
 
 async def main():
-    app = ApplicationBuilder().token("ТВОЙ_ТОКЕН").build()
+    app = ApplicationBuilder().token("7324984851:AAEh--FYTw2_nlKgtg03blvgfVvwT1FT484").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(show_catalog, pattern="catalog"))
